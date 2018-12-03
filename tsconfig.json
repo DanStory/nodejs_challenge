@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "target": "es2017",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "inlineSourceMap": true,
+    "inlineSources": true,
+    "removeComments": false,
+    "emitDecoratorMetadata": true,
+    "pretty": true,
+    "strictNullChecks": true,
+    "outDir": "./dist"
+  },
+  "compileOnSave": false,
+  "buildOnSave": false,
+  "include": [
+    "./src/**/*"
+  ]
+}
