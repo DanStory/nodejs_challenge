@@ -23,7 +23,7 @@ export class QueryServicesController {
 
     // TODO: Change to POST verb
     @Get()
-    async get(@QueryParam('host') host: string, @QueryParam('service') serviceNames: string[] = ['geoip'], @Ctx() context) {
+    async get(@QueryParam('host') host: string, @QueryParam('service') serviceNames: string[] = ['ping'], @Ctx() context) {
 
         if (!host || (!ip.isV4Format(host) && !ip.isV6Format(host) && !isValidDomain(host))) {
             context.status = 400;
